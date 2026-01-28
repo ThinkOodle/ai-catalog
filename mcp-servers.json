@@ -1,0 +1,65 @@
+{
+  "$schema": "./schemas/mcp-servers.schema.json",
+  "version": "1.0",
+  "lastUpdated": "2025-01-28T00:00:00Z",
+  "servers": [
+    {
+      "id": "context7",
+      "name": "Context7",
+      "description": "Search through documentation for any programming library or framework. Great for finding API references and code examples.",
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "category": "Documentation",
+      "tags": ["docs", "search", "libraries", "api-reference"],
+      "requiresAuth": false,
+      "website": "https://context7.com",
+      "docsUrl": "https://github.com/upstash/context7"
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "description": "Query Sentry issues, projects, and error data. Useful for debugging and monitoring application health.",
+      "type": "remote",
+      "url": "https://mcp.sentry.dev/mcp",
+      "category": "Monitoring",
+      "tags": ["errors", "monitoring", "debugging", "issues"],
+      "requiresAuth": true,
+      "authType": "oauth",
+      "authConfig": {
+        "instructions": "Click 'Connect' to authorize with your Sentry account. You'll be redirected to Sentry to grant access."
+      },
+      "website": "https://sentry.io",
+      "docsUrl": "https://mcp.sentry.dev"
+    },
+    {
+      "id": "grep-vercel",
+      "name": "Grep by Vercel",
+      "description": "Search through code snippets on GitHub. Find real-world examples of how APIs and libraries are used.",
+      "type": "remote",
+      "url": "https://mcp.grep.app",
+      "category": "Code Search",
+      "tags": ["search", "github", "code-examples", "snippets"],
+      "requiresAuth": false,
+      "website": "https://grep.app",
+      "docsUrl": "https://grep.app"
+    },
+    {
+      "id": "exa-web-search",
+      "name": "Exa Web Search",
+      "description": "AI-powered web search for finding high-quality, relevant content. Better than traditional search for technical queries.",
+      "type": "remote",
+      "url": "https://mcp.exa.ai/mcp",
+      "category": "Search",
+      "tags": ["search", "web", "research"],
+      "requiresAuth": true,
+      "authType": "apiKey",
+      "authConfig": {
+        "envVar": "EXA_API_KEY",
+        "instructions": "Get your API key from the Exa dashboard",
+        "obtainUrl": "https://dashboard.exa.ai/api-keys"
+      },
+      "website": "https://exa.ai",
+      "docsUrl": "https://docs.exa.ai"
+    }
+  ]
+}

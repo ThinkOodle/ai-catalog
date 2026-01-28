@@ -1,0 +1,18 @@
+{
+  "$schema": "./schemas/skills.schema.json",
+  "version": "1.0",
+  "lastUpdated": "2025-01-28T00:00:00Z",
+  "skills": [
+    {
+      "id": "example-skill",
+      "name": "Example Agency Skill",
+      "description": "A template skill demonstrating the expected format for agency skills.",
+      "category": "Templates",
+      "tags": ["example", "template", "getting-started"],
+      "path": "skills/example-skill/SKILL.md",
+      "author": "Agency Team",
+      "version": "1.0.0",
+      "updatedAt": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
