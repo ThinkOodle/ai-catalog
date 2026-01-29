@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agents Catalog",
+  "description": "Schema for the agency agents catalog",
+  "type": "object",
+  "required": ["version", "lastUpdated", "agents"],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "description": "Catalog schema version"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of last update"
+    },
+    "agents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/agent"
+      }
+    }
+  },
+  "definitions": {
+    "agent": {
+      "type": "object",
+      "required": ["id", "name", "description", "path"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Unique identifier (lowercase, hyphenated)"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "description": "Display name"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "Brief description"
+        },
+        "mode": {
+          "type": "string",
+          "enum": ["primary", "subagent", "all"],
+          "description": "Agent mode"
+        },
+        "category": {
+          "type": "string",
+          "description": "Grouping category"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Searchable tags"
+        },
+        "path": {
+          "type": "string",
+          "description": "Path to AGENT.md in repository"
+        },
+        "author": {
+          "type": "string",
+          "description": "Author name"
+        },
+        "version": {
+          "type": "string",
+          "description": "Semantic version"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp"
+        }
+      }
+    }
+  }
+}

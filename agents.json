@@ -1,0 +1,19 @@
+{
+  "$schema": "./schemas/agents.schema.json",
+  "version": "1.0",
+  "lastUpdated": "2025-01-28T00:00:00Z",
+  "agents": [
+    {
+      "id": "code-reviewer",
+      "name": "Code Reviewer",
+      "description": "Reviews code for best practices, security, and potential issues",
+      "mode": "subagent",
+      "category": "Development",
+      "tags": ["review", "quality", "security"],
+      "path": "agents/code-reviewer/AGENT.md",
+      "author": "Agency Team",
+      "version": "1.0.0",
+      "updatedAt": "2025-01-28T00:00:00Z"
+    }
+  ]
+}
