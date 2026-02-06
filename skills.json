@@ -1,7 +1,7 @@
 {
   "$schema": "./schemas/skills.schema.json",
   "version": "1.0",
-  "lastUpdated": "2026-02-06T18:55:04.946Z",
+  "lastUpdated": "2026-02-06T19:17:12.800Z",
   "skills": [
     {
       "id": "example-skill",
@@ -32,6 +32,19 @@
       "author": "coreyhaines31",
       "version": "1.0.0",
       "updatedAt": "2026-02-06T00:00:00Z"
+    },
+    {
+      "id": "seo-audit",
+      "name": "When the user wants to audit, review, or diagnose SEO issues ...",
+      "description": "When the user wants to audit, review, or diagnose SEO issues on their site. Also use when the user mentions \"SEO audit,\" \"technical SEO,\" \"why am I not ranking,\" \"SEO issues,\" \"on-page SEO,\" \"meta ...",
+      "category": "Requested",
+      "tags": [
+        "requested"
+      ],
+      "path": "skills/seo-audit/SKILL.md",
+      "author": "Skill Request",
+      "version": "1.0.0",
+      "updatedAt": "2026-02-06T19:17:12.800Z"
     }
   ]
 }
