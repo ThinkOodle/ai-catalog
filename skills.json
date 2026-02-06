@@ -1,18 +1,35 @@
 {
   "$schema": "./schemas/skills.schema.json",
   "version": "1.0",
-  "lastUpdated": "2025-01-28T00:00:00Z",
+  "lastUpdated": "2026-02-06T18:55:04.946Z",
   "skills": [
     {
       "id": "example-skill",
       "name": "Example Agency Skill",
       "description": "A template skill demonstrating the expected format for agency skills.",
       "category": "Templates",
-      "tags": ["example", "template", "getting-started"],
+      "tags": [
+        "example",
+        "template",
+        "getting-started"
+      ],
       "path": "skills/example-skill/SKILL.md",
       "author": "Agency Team",
       "version": "1.0.0",
       "updatedAt": "2025-01-28T00:00:00Z"
+    },
+    {
+      "id": "copywriting",
+      "name": "When the user wants to write, rewrite, or improve marketing c...",
+      "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the use...",
+      "category": "Requested",
+      "tags": [
+        "requested"
+      ],
+      "path": "skills/copywriting/SKILL.md",
+      "author": "Skill Request",
+      "version": "1.0.0",
+      "updatedAt": "2026-02-06T18:55:04.946Z"
     }
   ]
 }
