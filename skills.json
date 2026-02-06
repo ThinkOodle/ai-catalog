@@ -20,10 +20,12 @@
     },
     {
       "id": "copywriting",
-      "name": "When the user wants to write, rewrite, or improve marketing c...",
-      "description": "When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the use...",
-      "category": "Requested",
+      "name": "Copywriting",
+      "description": "When the user wants to write, rewrite, or improve marketing copy.",
+      "category": "Marketing",
       "tags": [
+        "copywriting",
+        "marketing",
         "requested"
       ],
       "path": "skills/copywriting/SKILL.md",
